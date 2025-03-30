@@ -1,0 +1,6 @@
+### Create audio from text
+GET http://localhost:5004/tts?text=Tôi đang cố gắng tạo một cuốn sách nói cho em gái tôi&speed=slow
+
+### Download audio
+GET http://localhost:5004/audio/146c7a395929ca7ce65605fd9101c8843194e141.wav
+Content-Type: audio/wav
