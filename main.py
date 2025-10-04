@@ -5,6 +5,7 @@ from googleapiclient.discovery import build
 from docx import Document
 
 
+## BOOK 1: THE COMPLETE BOOK OF NUMEROLOGY
 # 1. Extract text from the PDF by chapters and translate to Vietnamese
 google_translate_service = build(
     "translate",
@@ -61,3 +62,33 @@ for (page_num, page_content) in enumerate(pages):
             print("Audio file saved successfully.")
     else:
         print(f"Failed to generate audio: {response.status_code}")
+
+
+### BOOK 2: TAM LY HOC DAY HOC DAI HOC
+
+doc = Document("tam-ly-hoc-day-hoc-dai-hoc-1.3.2.docx")
+
+i = 1
+
+# Example: read all paragraphs
+for para in doc.paragraphs: # 2239 paras
+    if len(para.text) == 0:
+        continue
+    url = "http://localhost:5004/tts"
+    params = {
+            "text": para.text,
+            "speed": "slow"
+        }
+
+    response = requests.get(
+                    url=url,
+                    params=params)
+
+    if response.status_code == 200:
+        audio_url = response.json().get("audio_url")
+        with open(f"./Chuong-1.3.2/tam-ly-hoc-day-hoc-dai-hoc-1.3.2-{i}.wav", "wb") as f:
+            f.write(requests.get(audio_url).content)
+            print("Audio file saved successfully.")
+    else:
+        print(f"Failed to generate audio: {response.status_code}")
+    i += 1
