@@ -24,3 +24,4 @@ python3 main.py
 - Viet tech-to-speed: https://github.com/phatjkk/vits-tts-vietnamese/blob/main/README.md
 - Eng-Viet translation: [Google Cloud Translation API](https://cloud.google.com/translate?utm_source=google&utm_medium=cpc&utm_campaign=emea-nl-all-en-dr-skws-all-all-trial-e-gcp-1707574&utm_content=text-ad-none-any-dev_c-cre_574628516095-adgp_Hybrid+%7C+SKWS+-+EXA+%7C+Txt+-+AI+And+Machine+Learning+-+Translation+AI+-+v1-kwid_43700067787181231-kwd-30693959751-userloc_9065081&utm_term=kw_translate+api-net_g-plac_&&gad_source=1&gclid=Cj0KCQjw16O_BhDNARIsAC3i2GBP0Ae4oDsTxKN5ljkn7oTeHsUZVj4agmNzCdJW8tHqenMBwpaAVbUaAgykEALw_wcB&gclsrc=aw.ds&hl=en)
 - Viet book: https://docs.google.com/document/d/1OaZFrgtk6GSpMbkUTZ7Q4N2ET6REzoNx/edit?
+- Book 2 Tam ly day hoc dai hoc: https://docs.google.com/document/d/1nZR6vWj_ChrkuMUZDZd_lNgzdhmyP7fs/edit?usp=drive_link&ouid=108733604685959193931&rtpof=true&sd=true
